@@ -1,0 +1,65 @@
+studi kasus = website toko online
+
+note:
+disini website hanya untuk menampilkan informasi seputar produk atau jasa yang di jual
+seperti foto produk, harga,deskripsi produk, dan informasi kontak penjual. jika ada yang
+ingin membeli produk, bisa langsung hubungi penjual via nomor telepon yang tercantum.
+
+frontend / tampilan		: HTML,CSS
+BAckend/ bahasa pemograman	: PHP
+Database				: MYSQL
+Text Editor 			: visual studio code
+
+
+User/pengguna
+-calon pembeli
+-penjual/admin
+
+Struktur database
+
+db_catalog
+
+#tb_admin
+========================================================
+1.admin_id		|int(11)primary key auto increment
+2.admin_name	|varchar(50) 
+3.username		|varchar(100)
+4.password		|varchar(50)
+5.admin_telp	|varchar(12)
+6.admin_email	|varchar(50)
+7.admin_addrees 	|text
+
+#tb_category
+========================================================
+1.category_id	|int(11)primary key auto increment
+2.category_name	|varchar(25)
+
+#tb_product
+========================================================
+1.product_id		|int(11)primary key auto increment
+2.category_id		|int(11)foreign key 
+3.product_name		|varchar(50)
+4.product_price		|varchar(10)
+5.product_description	|text
+6.product_image		|varchar(100)
+7.product_status		|tinyint(1)
+8.date_created	 	|timestamp
+
+Halaman Akses
+1. admin:
+-Login
+-dashboard
+-profil (update)
+-data kategori(create, read, update, delete)
+-data produk (create, read, update, delete)
+
+2. calon pembeli:
+-Beranda
+-produk
+-Detail produk
+
+
+
+
+
+
